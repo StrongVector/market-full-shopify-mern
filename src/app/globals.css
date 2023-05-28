@@ -1,0 +1,37 @@
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* html{
+ @apply font
+} */
+body{
+  @apply bg-gradient-to-r from-gray-100 to-gray-200 ;
+  font-family: 'Cairo', sans-serif;
+/* font-family: 'Roboto Condensed', sans-serif; */
+  
+}
+.img{
+  width: 224px !important;
+  height: 135px !important;
+}   
+
+.link{
+  @apply hover:opacity-60;
+}
+
+
+
+
+
+
+
+
+ /* bg-gradient-to-r from-rose-100 to-teal-100 */
+  /* bg-gradient-to-r from-violet-200 to-pink-200 */
+  /* bg-gradient-to-r from-gray-100 to-gray-300 */
+   /* bg-gradient-to-r from-green-100 via-blue-100 to-sky-200 */            
