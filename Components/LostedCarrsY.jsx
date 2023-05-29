@@ -39,7 +39,6 @@ let cars= [
 ]
   return (
     <div>
-        <SubTitle title ={"العربات المفقوده حسب سنه الصنع"}/>
          <CardsList data ={cars}/>  
          <Pagginations/> 
     </div>

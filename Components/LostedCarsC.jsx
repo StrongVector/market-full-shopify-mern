@@ -17,7 +17,7 @@ const LostedCarsC = () => {
     ]
   return (
     <div>
-        <SubTitle title ={" العربات المفقودة حسب الشركه المنتجة"}/>
+
             <CardsList data ={cars}/> 
             <Pagginations/>
         

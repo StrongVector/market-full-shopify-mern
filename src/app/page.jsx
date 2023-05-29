@@ -7,6 +7,11 @@ import RelatedBtns from '../../Components/RelatedBtns'
 import LostedCarrsY from '../../Components/LostedCarrsY'
 import LostedCarsC from '../../Components/LostedCarsC'
 import CurruntlyAddedCars from '../../Components/CurruntlyAddedCars'
+import LostedCarsContainer from '../../Components/LostedCarsContainer'
+import RelatedTopics from '../../Components/RelatedTopics'
+import RelatedDevs from '../../Components/RelatedDevs'
+import Footer from '../../Components/Footer'
+import SiteFooter from '../../Components/SiteFooter'
 
 
 
@@ -20,10 +25,14 @@ const Home = () => {
     <RelatedBtns/>
     <SearchBox/>
     <LotCallRecording/>
-    <LostedCarrsY/>
-    <LostedCarsC/>
+    <LostedCarsContainer/>
+
     <CurruntlyAddedCars/>
-    {/* <Table/> */}
+    <RelatedTopics/>
+    <RelatedDevs/>
+    {/* <Footer/> */}
+    <SiteFooter/>
+
 
     </div>
   )

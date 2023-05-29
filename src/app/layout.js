@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     
-    <html lang="ar" >
+    <html dir='rtl' lang="ar" >
 
   
 <head>

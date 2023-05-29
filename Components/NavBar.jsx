@@ -21,15 +21,16 @@ const NavBar = () => {
         setToggle(!toggle);
     }
   return (
-    <nav className=' w-screen px-8 bg-white '> 
+    <nav className='md:w-screen m-0  px-8 bg-white '> 
         {/* mobile nav */}
-    <div className='md:hidden flex justify-between items-center flex-wrap px-2 pl-3 py-4'>
-    <span onClick={handleToggle}>{<FiMenu className='text-3xl'/>}</span>
+    <div className='container mx-auto  md:hidden flex justify-between items-center flex-wrap px-2 pl-3 py-4'>
     <span className='flex justify-center items-center gap-2'>
        <span className='text-2xl -mt-1 font-bold text-orange-400'>تنسيق </span>
        {/* <span className='text-3xl -mt-2 font-bold'>تنسيق</span> */}
       <Image className='rounded-full' src={hassan} alt="logo" width={30} height={30} />
     </span>
+    <span onClick={handleToggle}>{<FiMenu className='text-3xl'/>}</span>
+
     { toggle &&
      <div className='w-screen text-center mt-8'>
       <ul>
@@ -47,11 +48,11 @@ const NavBar = () => {
     
 
     {/* desktop nav */}
-    <div className='w-screen hidden md:flex flex-row-reverse justify-between items-center px-16 pr-20 py-4 '>
+    <div className='md:w-screen hidden md:flex flex-row justify-between items-center px-16 pr-10 pl-20 py-4 '>
     
     <span className='flex  justify-center items-center gap-2'>
-       <span className='text-3xl -mt-1 font-bold text-orange-400'>تنسيق : ننجو معا</span>
       <Image className='rounded-full' src={hassan} alt="logo" width={30} height={30} />
+       <span className='text-3xl -mt-1 font-bold text-orange-400'>تنسيق </span>
     </span>
     <ul className='flex justify-center items-center gap-4'>
     <li className='flex justify-center items-center gap-1'>

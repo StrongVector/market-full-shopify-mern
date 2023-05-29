@@ -6,13 +6,13 @@ import React from 'react'
 const Card = ({data}) => {
   return (
     <div className='w-56 bg-white rounded-lg shadow-lg p-1  pb-4 cursor-pointer hover:scale-105 transition-all
-    flex flex-col justify-center items-center gap-3'>
+    flex flex-col justify-center items-center gap-4'>
     <h2 className='font-bold text-3xl '>{data.lostDate?data.lostDate:data.company}
     </h2>
         <div className='flex flex-col justify-center items-center gap-3 '>
             <h2 className='text-xl font-medium  text-slate-800'>
               {data.title?data.title:data.quantity? data.quantity+' الكمية':data.company  }
-            <p className=''>{data.color &&  " اللون " +data.color  }
+            <p className='text-xl font-light'>{data.color &&  " اللون " +data.color  }
             </p>
 
             </h2>
