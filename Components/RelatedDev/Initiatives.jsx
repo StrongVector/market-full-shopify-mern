@@ -6,7 +6,8 @@ const Initiatives = () => {
     shadow-lg w-10/12 md:w-auto'>
         <div className='flex justify-between gap-8 items-center'>
             <p className='font-semibold mb-3 text-lg md:text-xl' >مبادرات يمكن التواصل معها</p>
-            <p className=' w-fit hover:opacity-60 cursor-pointer  px-2 py-1 rounded-lg bg-orange-400 text-white'> سجل مبادرة</p>
+            <p className=' w-fit hover:opacity-60 cursor-pointer 
+             px-2 py-1 rounded-lg bg-orange-400 text-white text-sm md:text-base'> سجل مبادرة</p>
 
         </div>
         <p className=' w-full cursor-pointer'>

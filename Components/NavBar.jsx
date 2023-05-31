@@ -21,7 +21,7 @@ const NavBar = () => {
         setToggle(!toggle);
     }
   return (
-    <nav className='md:w-screen m-0  px-8 bg-white '> 
+    <nav className=' m-0  px-8 bg-white '> 
         {/* mobile nav */}
     <div className='container mx-auto  md:hidden flex justify-between items-center flex-wrap px-2 pl-3 py-4'>
     <span className='flex justify-center items-center gap-2'>
@@ -48,7 +48,7 @@ const NavBar = () => {
     
 
     {/* desktop nav */}
-    <div className='md:w-screen hidden md:flex flex-row justify-between items-center px-16 pr-10 pl-20 py-4 '>
+    <div className=' hidden md:flex flex-row justify-between items-center px-16 pr-10 pl-20 py-4 '>
     
     <span className='flex  justify-center items-center gap-2'>
       <Image className='rounded-full' src={hassan} alt="logo" width={30} height={30} />
