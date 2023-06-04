@@ -1,11 +1,9 @@
-"use client"
-import { Provider } from 'react-redux'
+// "use client"
+// import { Provider } from 'react-redux'
 
 import './globals.css'
-import Store from '@/redux/Store'
+
 import NavBar from '../../Components/NavBar'
-
-
 
 export const metadata = {
   title: 'modern markit',
@@ -22,7 +20,7 @@ export default function RootLayout({ children }) {
 
 
 </head>
-<Provider store={Store}>
+{/* <Provider store={Store}> */}
 
       <body>
     <NavBar/>
@@ -32,7 +30,7 @@ export default function RootLayout({ children }) {
       </main>
 
       </body>
-      </Provider>
+      {/* </Provider> */}
 
     </html>
   )

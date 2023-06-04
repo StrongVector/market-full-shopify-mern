@@ -5,18 +5,17 @@ import hassan from "../public/imgs/logo.jpg";
 
 import {FiMenu } from 'react-icons/fi'
 
-import {BsTelephone } from 'react-icons/bs'
-import {BsInfoCircle} from 'react-icons/bs'
 import { AiFillHome } from 'react-icons/ai';
 import {BiLogIn} from 'react-icons/bi'
-// import {AiOutlineHome} from 'react-icons/ai'
+import Link from 'next/link';
+
 
 
 const NavBar = () => {
 
 
 
-    let[toggle,setToggle] = useState(true);
+    let[toggle,setToggle] = useState(false);
     const handleToggle =()=>{
         setToggle(!toggle);
     }
@@ -34,13 +33,13 @@ const NavBar = () => {
     { toggle &&
      <div className='w-screen text-center mt-8'>
       <ul>
-         <li className='flex justify-center items-center gap-1 pb-2 link'>
+         <Link href='/' className='flex justify-center items-center gap-1 pb-2 link'>
          <span><AiFillHome className='text-xl'/></span><span>الرئيسية</span>
-         </li>
+         </Link>
          {/*  */}
-         <li className='flex justify-center items-center gap-1 link'>
+         <Link href='/login' className='flex justify-center items-center gap-1 link'>
          <span><BiLogIn className='text-2xl'/></span><span>تسجيل الدخول</span>
-         </li>
+         </Link>
       </ul>
     </div>}
 
@@ -55,13 +54,13 @@ const NavBar = () => {
        <span className='text-3xl -mt-1 font-bold text-orange-400'>تنسيق </span>
     </span>
     <ul className='flex justify-center items-center gap-4'>
-    <li className='flex justify-center items-center gap-1'>
+    <Link href='/' className='flex justify-center items-center gap-1'>
          <span><AiFillHome className='text-xl'/></span><span>الرئيسية</span>
-         </li>
+         </Link>
          {/*  */}
-         <li className='flex justify-center items-center gap-1'>
+         <Link href='/login' className='flex justify-center items-center gap-1'>
          <span><BiLogIn className='text-2xl'/></span><span>تسجيل الدخول</span>
-         </li>
+         </Link>
     </ul>
     </div>
     

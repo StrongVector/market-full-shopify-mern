@@ -1,6 +1,6 @@
 import React from 'react'
 import CardsList from './CardsList'
-import SubTitle from './SubTitle'
+
 import Pagginations from './Pagginations'
 
 const LostedCarsC = () => {
