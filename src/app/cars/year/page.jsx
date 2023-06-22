@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Losted from '../../../../Components/LostedCars.jsx/Losted'
+import Losted from '../../../../Components/LostedCars.jsx/ByModels/Losted'
 
 const page = () => {
   return (

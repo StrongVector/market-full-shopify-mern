@@ -1,8 +1,9 @@
 import React from 'react'
+import LoginCon from '../../../Components/login/LoginCon'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className='flex justify-center items-center '><LoginCon/></div>
   )
 }
 

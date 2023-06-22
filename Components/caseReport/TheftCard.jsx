@@ -18,7 +18,7 @@ const TheftCard = ({data}) => {
             </p>
 
 <h2 className='text-sm font-semibold  text-slate-800'>
-              {'سبب الفق'+" : "+data.theftPlace }
+              {' سبب الفقد'+" : "+data.theftPlace }
             </h2>
 
         </div>

@@ -43,7 +43,7 @@ const YearStatistics = () => {
     }, []);
 
     return (
-        <div className="card   w-72 text-xl  bg-white p-3 ">
+        <div className="card   w-72 md:w-80 text-xl  bg-white p-3 ">
             <Chart className='h-full' type="bar" data={chartData} options={chartOptions} />
         </div>
   

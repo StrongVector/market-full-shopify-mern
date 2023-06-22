@@ -1,7 +1,6 @@
-import Image from 'next/image'
+
 import React from 'react'
 import {AiFillNotification} from "react-icons/ai"
-
 
 const Hero = () => {
 
@@ -25,7 +24,6 @@ const Hero = () => {
     </span>
 
     </p>
-   
 
     </div>
   )

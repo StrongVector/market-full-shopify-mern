@@ -1,5 +1,5 @@
 import React from 'react'
-import SiteChart from '../../../Components/statistics/SiteChart'
+import SiteChart from '../../../Components/statistics/acourdingStatus/SiteChart'
 import SiteStatistics from '../../../Components/statistics/Statistics'
 
 const Statistics = () => {

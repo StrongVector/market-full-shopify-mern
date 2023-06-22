@@ -1,5 +1,5 @@
 import React from 'react'
-import SubTitle from '../SubTitle'
+import SubTitle from '../Utils/SubTitle'
 
 const CallContact = () => {
   return (

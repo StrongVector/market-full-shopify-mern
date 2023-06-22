@@ -44,8 +44,8 @@ const ResonChart = () => {
     }, []);
 
     return (
-        <div className="card w-72 text-xl  bg-white p-3 ">
-            <Chart className='h-full' type="bar" data={chartData} options={chartOptions} />
+        <div className="card w-80 text-xl  bg-white p-3 ">
+            <Chart  className='h-full w-[240px] md:w-80' type="bar" data={chartData} options={chartOptions} />
         </div>
     )
 }

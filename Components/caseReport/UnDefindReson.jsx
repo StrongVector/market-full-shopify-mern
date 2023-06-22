@@ -1,5 +1,5 @@
 import React from 'react'
-import Pagginations from '../Pagginations';
+import Pagginations from '../Utils/Pagginations';
 import TheftCard from './TheftCard';
 
 const UnDefindReson = () => {

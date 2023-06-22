@@ -1,12 +1,12 @@
 // "use client"
-// import { Provider } from 'react-redux'
 
 import './globals.css'
 
-import NavBar from '../../Components/NavBar'
+import NavBar from '../../Components/Utils/NavBar'
+import SiteFooter from '../../Components/footer/SiteFooter'
 
 export const metadata = {
-  title: 'modern markit',
+  title: 'تنسيق : ننجو معا',
   description:'developed by hassan ',
 }
 
@@ -20,18 +20,17 @@ export default function RootLayout({ children }) {
 
 
 </head>
-{/* <Provider store={Store}> */}
+
 
       <body>
     <NavBar/>
-  
       <main>
       {children}
       </main>
-
+      <div>
+        <SiteFooter/>
+      </div>
       </body>
-      {/* </Provider> */}
-
     </html>
   )
 }

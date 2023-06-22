@@ -1,5 +1,5 @@
 import React from 'react'
-import SubTitle from '../SubTitle'
+import SubTitle from '../Utils/SubTitle'
 import CallDescription from './CallDescription'
 import CallContact from './CallContact'
 

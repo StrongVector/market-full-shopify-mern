@@ -1,5 +1,5 @@
 import React from 'react'
-import SubTitle from '../SubTitle'
+import SubTitle from '../Utils/SubTitle'
 import TheftReport from './TheftReport'
 import ArmedRobbery from './ArmedRobbery'
 import UnDefindReson from './UnDefindReson'

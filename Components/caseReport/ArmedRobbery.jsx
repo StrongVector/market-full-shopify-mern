@@ -1,6 +1,6 @@
 import React from 'react'
 import TheftCard from './TheftCard';
-import Pagginations from '../Pagginations';
+import Pagginations from '../Utils/Pagginations';
 
 const ArmedRobbery = () => {
 

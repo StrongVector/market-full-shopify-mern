@@ -5,13 +5,13 @@ import ModelStatistics from './accordingModel/ModelStatistics'
 import CompanyStatistics from './acordingcompany/companyStatistics'
 import CityStatistics from './accordingCity/CityStatistics'
 import ResonStatistics from './accordingReson/ResonStatistics'
-import SubTitle from '../SubTitle'
+import SubTitle from '../Utils/SubTitle'
 
 const SiteStatistics = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-4 p-6 '>
+    <div className='flex flex-col justify-center items-center gap-4 p-6 md:w-screen '>
         <SubTitle title={'الأحصائيات'} className ='my-3'/>
-        <LostedCarsBystuts/>
+        <LostedCarsBystuts />
         <ModelStatistics/>
         <CompanyStatistics/>
         <CityStatistics/>

@@ -1,7 +1,7 @@
 import React from 'react'
-import CardsList from '../CardsList'
+import CardsList from '../Utils/CardsList'
 import TheftCard from './TheftCard'
-import Pagginations from '../Pagginations'
+import Pagginations from '../Utils/Pagginations'
 
 const TheftReport = () => {
     let cars = [

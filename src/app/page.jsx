@@ -2,16 +2,12 @@
 import React from 'react'
 import Hero from '../../Components/Hero'
 import SearchBox from '../../Components/SearchBox'
-import LotCallRecording from '../../Components/LotCallRecording'
-import RelatedBtns from '../../Components/RelatedBtns'
-import LostedCarrsY from '../../Components/LostedCarrsY'
-import LostedCarsC from '../../Components/LostedCarsC'
-import CurruntlyAddedCars from '../../Components/CurruntlyAddedCars'
-import LostedCarsContainer from '../../Components/LostedCarsContainer'
-import RelatedTopics from '../../Components/RelatedTopics'
-import RelatedDevs from '../../Components/RelatedDevs'
-import Footer from '../../Components/Footer'
-import SiteFooter from '../../Components/SiteFooter'
+import LotCallRecording from '../../Components/lostRecordings/LostCallRecordings'
+import RelatedBtns from '../../Components/NavigationBtn'
+import CurruntlyAddedCars from '../../Components/LostedCars.jsx/CurrntlyAdded/CurruntlyAddedCars'
+import LostedCarsContainer from '../../Components/LostedCars.jsx/LostedCarsContainer'
+import RelatedTopics from '../../Components/relatedLinks/RelatedTopics'
+import RelatedDevs from '../../Components/RelatetdTopics/RelatedDevs'
 
 
 
@@ -30,10 +26,7 @@ const Home = () => {
     <CurruntlyAddedCars/>
     <RelatedTopics/>
     <RelatedDevs/>
-    {/* <Footer/> */}
-    <SiteFooter/>
-
-
+   
     </div>
   )
 }
