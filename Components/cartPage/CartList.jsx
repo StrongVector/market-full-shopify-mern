@@ -1,15 +1,15 @@
 import React from 'react'
-import Card from './Card';
+import CartCard from './CartCard';
 
-const CardsList = ({data}) => {
+const CartList = ({data}) => {
   
   return (
     <div className=' container mx-auto mt-4 lg:mt-2 flex flex-row justify-center items-center gap-3 flex-wrap p-4'>
-      {data.map((car,ind)=>{return(<Card key ={ind} data ={car}/>)})}
+      {data.map((car,ind)=>{return(<CartCard key ={ind} data ={car}/>)})}
      
        
     </div>
   )
 }
 
-export default CardsList
+export default CartList

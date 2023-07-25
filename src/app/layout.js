@@ -1,19 +1,21 @@
-// "use client"
+"use client"
 
 import './globals.css'
 
 import NavBar from '../../Components/Utils/NavBar'
-import SiteFooter from '../../Components/footer/SiteFooter'
+import { Provider } from 'react-redux'
+import Store from '../../redux/Store'
+
 
 export const metadata = {
-  title: 'تنسيق : ننجو معا',
+  title: ' Foodify',
   description:'developed by hassan ',
 }
 
 export default function RootLayout({ children }) {
   return (
     
-    <html dir='rtl' lang="ar" >
+    <html dir='' lang="" >
 
   
 <head>
@@ -23,13 +25,15 @@ export default function RootLayout({ children }) {
 
 
       <body>
+        <Provider store={Store}>
     <NavBar/>
       <main>
       {children}
       </main>
       <div>
-        <SiteFooter/>
+      
       </div>
+      </Provider>
       </body>
     </html>
   )

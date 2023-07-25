@@ -1,33 +1,31 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Hero from '../../Components/Hero'
-import SearchBox from '../../Components/SearchBox'
-import LotCallRecording from '../../Components/lostRecordings/LostCallRecordings'
-import RelatedBtns from '../../Components/NavigationBtn'
-import CurruntlyAddedCars from '../../Components/LostedCars.jsx/CurrntlyAdded/CurruntlyAddedCars'
-import LostedCarsContainer from '../../Components/LostedCars.jsx/LostedCarsContainer'
-import RelatedTopics from '../../Components/relatedLinks/RelatedTopics'
-import RelatedDevs from '../../Components/RelatetdTopics/RelatedDevs'
-
-
+import SubTitle from '../../Components/Utils/SubTitle'
+import CardsList from '../../Components/Utils/CardsList'
+import foodImg from '../../public/imgs/heroLogo.jpg'
+import FoodList from '../../Data'
+import productsList from '../../Data'
 
 const Home = () => {
-
+ 
+const [mounted,setMounted] = useState(false);
+useEffect(()=>{
+  setMounted(true);
+})
 
   return (
-    <div className='flex flex-col justify-center items-center flex-wrap gap-4 container mx-auto
-  ' >
-    <Hero/>
-    <RelatedBtns/>
-    <SearchBox/>
-    <LotCallRecording/>
-    <LostedCarsContainer/>
+    mounted == false ? null:
 
-    <CurruntlyAddedCars/>
-    <RelatedTopics/>
-    <RelatedDevs/>
-   
-    </div>
+    <main className=''>
+ 
+  <Hero/>
+  <SubTitle title ={'Best Products'}/>
+  <CardsList data={productsList}/>
+  <SubTitle title={'Most Rated'}/>
+  <CardsList data={productsList}/>
+
+    </main>
   )
 }
 

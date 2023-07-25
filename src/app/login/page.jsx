@@ -1,10 +1,10 @@
 import React from 'react'
-import LoginCon from '../../../Components/login/LoginCon'
+import LoginForm from '../../../Components/Utils/LoginForm'
 
-const Login = () => {
+const LoginPage = () => {
   return (
-    <div className='flex justify-center items-center '><LoginCon/></div>
+    <div><LoginForm/></div>
   )
 }
 
-export default Login
+export default LoginPage
