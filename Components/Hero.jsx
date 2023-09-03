@@ -7,7 +7,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <main
-      className="container mx-auto mt-6 md:mt-16 p-4 
+      className=" p-4 bg-white min-h-[90dvh] w-screen overflow-hidden
     flex 
     justify-center items-center md:gap-x-24 lg:gap-x-72 gap-y-8 flex-wrap-reverse"
       id="home"
@@ -45,8 +45,7 @@ const Hero = () => {
       priority={true}
         src={logo}
         alt="hero-logo"
-        width={320}
-        height={320}
+        
         className="w-80 h-80 "
       />
     </main>

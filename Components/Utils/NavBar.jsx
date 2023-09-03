@@ -23,10 +23,10 @@ const NavBar = () => {
   };
 
   return (
-    <main className="px-6 bg-blue-600 text-white">
-    <nav className="  max-w-screen-xl mb-8">
+    <main className=" bg-blue-600 text-white">
+    <nav className="  max-w-screen-xl ">
       {/* mobile nav */}
-      <div className="container mx-auto  md:hidden flex justify-between items-center flex-wrap px-2 pl-3 py-4">
+      <div className="container mx-auto  md:hidden flex justify-between items-center flex-wrap px-4  py-4">
         <Link
           href="/"
           className="text-white flex justify-center items-center gap-2 cursor-pointer"
@@ -96,7 +96,7 @@ const NavBar = () => {
       {/* desktop nav */}
      
       <div
-        className=" hidden md:flex 
+        className="px-6 hidden md:flex 
      flex-row  py-4 justify-start items-center md:gap-24 lg:gap-96"
       >
         <Link

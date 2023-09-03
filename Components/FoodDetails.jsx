@@ -18,7 +18,7 @@ const FoodDetails = ({data}) => {
         dispatch(BuyEl(el));
     }
   return (
-    <div className='flex justify-center items-center gap-x-96 gap-y-4 p-4 lg:pt-8 flex-wrap-reverse '>
+    <div className='flex justify-center items-center bg-white gap-x-96 min-h-[90dvh] gap-y-4 p-4 lg:pt-8 flex-wrap-reverse '>
        
         <section className='flex flex-col items-center justify-center gap-3'>
             <div className='flex flex-col items-center justify-center gap-3 text-lg'>
@@ -40,7 +40,8 @@ const FoodDetails = ({data}) => {
 
         </section>
         <section>
-            <Image src={data.img} alt='detail-img' width={300} height={300}  />
+            <Image src={data.img} alt='detail-img' className='w-[260px] 
+            md:w-[310px] md:h-[310px] h[260px object-contain'  />
         </section>
 
 

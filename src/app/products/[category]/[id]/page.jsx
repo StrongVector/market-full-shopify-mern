@@ -1,17 +1,21 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import FoodDetails from '../../../../../Components/FoodDetails';
 import FoodList from '../../../../../Data';
 
 const page = ({params}) => {
+  const [mounted,setMounted] = useState(false);
+  useEffect(()=>{
+    setMounted(true)
+  })
    const {id} = params;
   const data =  FoodList.filter((iteam)=>{
         return(iteam.id == id)
    })
    console.log(data);
     
-  return (
-    <div className='flex flex-col pt-4 min-h-[90dvh]'>
+  return !mounted? null : (
+    <div className='flex flex-col  min-h-[90dvh]'>
       <FoodDetails data={data[0]}/>
 
     </div>

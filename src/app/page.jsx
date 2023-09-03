@@ -14,8 +14,8 @@ const Home = () => {
   });
 
   return mounted == false ? null : (
-    <main className="container mx-auto flex flex-col justify-center items-center gap-3 ">
-      <section>
+    <main className=" overflow-hidden  flex flex-col justify-center items-center gap-3 ">
+      <section className="w-screen">
 
       <Hero/>
       </section>

@@ -4,7 +4,8 @@
 @tailwind utilities;
 
 body{
-  @apply bg-gradient-to-r from-white to-white ;
+  /* @apply bg-gradient-to-r from-white to-white ; */
+  background-color: #f3f3f3;
  
   font-family: 'Poppins', sans-serif;
 

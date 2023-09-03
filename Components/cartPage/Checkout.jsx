@@ -16,7 +16,7 @@ const Checkout = () => {
 
 
   return (
-    <main className='w-64   p-3 
+    <main className='w-64 p-3  bg-white
      rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] pb-3'>
         <div className='flex flex-col justify-center items-center gap-2 mt-2 pb-3'>
             <h3 className='text-center text-lg font-semibold'>Bill</h3>
@@ -38,7 +38,7 @@ const Checkout = () => {
             shippingAddress
             description='you total is  $50'
             amount={5000}
-            // image='https://www.google.com/imgres?imgurl=https%3A%2F%2Fart.ngfiles.com%2Fimages%2F1432000%2F1432322_kldpxl_electronics-market.gif%3Ff1600606981&tbnid=fEzlx6MYOUsC2M&vet=12ahUKEwiCtv_66o2BAxWLhaQKHfbrBCsQMygWegUIARCEAQ..i&imgrefurl=https%3A%2F%2Fwww.newgrounds.com%2Fart%2Fview%2Fkldpxl%2Felectronics-market&docid=ps18_3E9znpkdM&w=1200&h=900&q=pixel%20market&client=firefox-b-d&ved=2ahUKEwiCtv_66o2BAxWLhaQKHfbrBCsQMygWegUIARCEAQ'
+            image='https://www.google.com/imgres?imgurl=https%3A%2F%2Fart.ngfiles.com%2Fimages%2F1432000%2F1432322_kldpxl_electronics-market.gif%3Ff1600606981&tbnid=fEzlx6MYOUsC2M&vet=12ahUKEwiCtv_66o2BAxWLhaQKHfbrBCsQMygWegUIARCEAQ..i&imgrefurl=https%3A%2F%2Fwww.newgrounds.com%2Fart%2Fview%2Fkldpxl%2Felectronics-market&docid=ps18_3E9znpkdM&w=1200&h=900&q=pixel%20market&client=firefox-b-d&ved=2ahUKEwiCtv_66o2BAxWLhaQKHfbrBCsQMygWegUIARCEAQ'
             token={onToken}
             stripeKey='
             pk_test_51Nm9S1B5ABLYssjaX2iACdXg8DV3fYtPmLxXFT502LH9d0shFFIjoUBsP6rSunhLydDzahBEdR3HTZSDuFkNB9Fb008RQ78WPA
