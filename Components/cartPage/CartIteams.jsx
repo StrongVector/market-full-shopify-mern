@@ -8,9 +8,9 @@ const CartIteams = () => {
 
   return (
     <div>
-        <p className='bg-blue-600 rounded-lg text-white my-3 w-fit px-16 py-2 text-center text-lg font-medium'>
+        {/* <p className='bg-blue-600 rounded-lg text-white my-3 w-fit px-16 py-2 text-center text-lg font-medium'>
             {iteams.length ===0 ?` Your cart is empty`:` you have ${iteams.length} elements `}
-        </p>
+        </p> */}
         <CartList data={iteams}/>
     </div>
   )

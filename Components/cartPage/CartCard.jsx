@@ -6,28 +6,19 @@ import { decQuantity, incQuantity } from "../../redux/CartSlice";
 // import { decQuantity, incQuantity } from "../../redux/CartSlice";
 
 const CartCard = ({ data }) => {
-  // const [qunatity, setQuantity] = useState(1);
-  // let  value = useSelector((state) => state.cart).filter((as) => {
-  //   return as.id === data.id;
-  // });
-
+  
   
     const dispach = useDispatch()
 
   const incrementQty = (data) => {
     dispach(incQuantity(data))
-    //  incQuantity(data);
-    
-    // console.log("incing " +data.quantity);
-    // console.log(`from cartcard quantity ${value[0].quantity}`);
-    // setQuantity(value[0].quantity)
-    
+  
   };
 
   const decrementQty = (data) => {
    
     dispach(decQuantity(data));
-    // console.log("decning");
+    
   };
 
   return (
@@ -44,36 +35,37 @@ const CartCard = ({ data }) => {
         <div className="flex flex-col justify-center items-center gap-1  ">
           <h2 className="font-bold text-2xl mb-1">{data.title}</h2>
           
-          <section className="flex flex-col justify-center items-center gap-2 mt-1">
+          <section className="flex flex-col justify-center items-center gap-2 mt-1 font-bold ">
+          {data.price *  data.quantity}$
 
-          <p className="flex flex-row justify-center items-center gap-3">
+          
+            <div className="flex justify-center items-center gap-2 mt-1">
+            <p
+              onClick={() => incrementQty(data)}
+              className="font-semibold px-2 text-lg  cursor-pointer 
+              rounded-md border bg-blue-600 text-white"
+            >
+              +
+            </p>
+           
+            <span className="text-blue-600 font-medium text-lg">
+              <p className="flex flex-row justify-center items-center gap-3">
             <span className="text-blue-600 font-medium text-lg ">
               quantity 
 
               </span>
 
-              <span className="text-white bg-blue-600 font-medium rounded-full px-2 py-1 ">
+              <span className="text-white bg-blue-600 font-medium text-sm rounded-full flex justify-center items-center w-[24px]  h-[24px] ">
               {data.quantity}
 
               </span>
               
 
             </p>
-            <div className="flex justify-center items-center gap-2 mt-1">
-            <p
-              onClick={() => incrementQty(data)}
-              className="font-semibold px-2 text-lg py-1 cursor-pointer rounded-sm border bg-blue-600 text-white"
-            >
-              +
-            </p>
-           
-            <span className="text-blue-600 font-medium text-lg">
-              {data.price *  data.quantity}$
-
               </span>
             <p
               onClick={() => decrementQty(data)}
-              className=" rounded-sm text-lg  font-semibold px-2 py-1 cursor-pointer bg-blue-600 text-white"
+              className=" rounded-md text-lg  font-semibold px-2  cursor-pointer bg-blue-600 text-white"
             >
               -
             </p>

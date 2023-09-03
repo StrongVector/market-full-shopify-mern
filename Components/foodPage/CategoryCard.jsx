@@ -1,25 +1,8 @@
 import Link from 'next/link'
-import React, { use } from 'react'
-import { useDispatch } from 'react-redux'
-import { getFilterd } from '../../redux/dataSlice'
-import FoodList from '../../Data'
+import React from 'react'
+
 const CategoryCard = ({data,ind}) => {
-  const dispatch = useDispatch()
-  const hundleFilter = ()=>{
-    let filterArr = FoodList
-    if(data.title == 'Burger'){
-          filterArr = filterArr.filter((item)=>{
-            return item.title == 'Burger'
-          })
-    }else if(data.tile == 'pizza'){
-      filterArr = filterArr.filter((item)=>{
-        return item.title == 'Pizza'
-      })
-    }
-      dispatch(getFilterd(filterArr));
-      console.log('pass');
-      
-  }
+
   return (
     <Link href={`/${data.ref}`} key={ind} className='w-24 p-3 flex flex-col justify-center items-center
       rounded-lg     shadow-[0_1px_10px_rgb(0,0,0,0.2)] hover:text-white

@@ -17,7 +17,7 @@ const Food  = () => {
   return (
     mounted == false ? null:
   
-    <div>
+    <div className='pt-8'>
         <SubTitle title= {'Categories'}/>
         <CategoriesList/>
   <SubTitle title ={' featured List'}/>

@@ -11,7 +11,7 @@ const page = ({params}) => {
    console.log(data);
     
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col pt-4 min-h-[90dvh]'>
       <FoodDetails data={data[0]}/>
 
     </div>

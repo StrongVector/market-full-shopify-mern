@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { BsFillCartFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
-import { MdFastfood } from "react-icons/md";
+
 import { GiShoppingBag } from "react-icons/gi";
 import { BiLogIn, BiSearch } from "react-icons/bi";
 import { BsShop } from "react-icons/bs";
@@ -23,7 +23,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className=" m-0  px-8 bg-blue-600 text-white w-screen">
+    <main className="px-6 bg-blue-600 text-white">
+    <nav className="  max-w-screen-xl mb-8">
       {/* mobile nav */}
       <div className="container mx-auto  md:hidden flex justify-between items-center flex-wrap px-2 pl-3 py-4">
         <Link
@@ -95,7 +96,7 @@ const NavBar = () => {
       {/* desktop nav */}
      
       <div
-        className=" hidden md:flex md:w-screen
+        className=" hidden md:flex 
      flex-row  py-4 justify-start items-center md:gap-24 lg:gap-96"
       >
         <Link
@@ -107,7 +108,7 @@ const NavBar = () => {
           </span>
           <span className="text-2xl -mt-1 font-bold text-white">SHOPIFY</span>
         </Link>
-        <ul className="flex justify-center items-center gap-6 lg:ml-24">
+        <ul className="flex justify-center items-center md:gap-3 lg:gap-6 lg:ml-16">
           <Link
             href="/"
             className="text-white flex justify-center items-center gap-1 hover:opacity-70"
@@ -157,6 +158,7 @@ const NavBar = () => {
         </ul>
       </div>
     </nav>
+    </main>
   );
 };
 // IoRestaurantSharp

@@ -9,7 +9,7 @@ const page = ({params}) => {
     return product.category === category;
   })
   return (
-    <div className='mt-6 p-2'>
+    <div className='mt-6 p-2 pt-4'>
       <SubTitle title={`${category} Products`}/>
       <CardsList data={data}/>
     </div>

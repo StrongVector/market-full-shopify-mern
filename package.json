@@ -19,7 +19,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
-    "react-simple-typewriter": "^5.0.1"
+    "react-simple-typewriter": "^5.0.1",
+    "react-stripe-checkout": "^2.6.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

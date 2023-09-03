@@ -8,9 +8,9 @@ const CartPage = () => {
   useEffect(()=>{setMounted(true)},[])
   
  
-  return (
+  return !mounted? null: (
     
-    <div>
+    <div className='pt-4 min-h-[90dvh]'>
       <Cart/>
     </div>
     

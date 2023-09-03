@@ -1,10 +1,12 @@
-"use client"
+// "use client"
 
 import './globals.css'
 
 import NavBar from '../../Components/Utils/NavBar'
-import { Provider } from 'react-redux'
-import Store from '../../redux/Store'
+
+
+import Footer from '../../Components/Utils/Footer'
+import App from '../../Components/App'
 
 
 export const metadata = {
@@ -25,15 +27,15 @@ export default function RootLayout({ children }) {
 
 
       <body>
-        <Provider store={Store}>
-    <NavBar/>
+       
+
       <main>
-      {children}
+      <App children={children} />
       </main>
       <div>
-      
+      <Footer/>
       </div>
-      </Provider>
+ 
       </body>
     </html>
   )

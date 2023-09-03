@@ -1,12 +1,12 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import CartIteams from './CartIteams';
 import Checkout from './Checkout';
 
 const Cart = () => {
 
   return (
-    <main className=' w-fit flex flex-col justify-center items-start flex-wrap gap-y-4 lg:gap-x-80 p-6'>
+    <main className=' container mx-auto flex  justify-between items-start flex-wrap lg:flex-nowrap   p-3 '>
         <section className='flex-grow'><CartIteams/></section>
         <section><Checkout/></section>
 
