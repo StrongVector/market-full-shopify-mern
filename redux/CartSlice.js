@@ -17,7 +17,6 @@ const CartSlice = createSlice({
       
       el.quantity += 1;
       
-    //   console.log(`quantity in slice ${action.payload.quantity}`);
     },
     decQuantity: (state, action) => {
       const id = action.payload.id;
@@ -26,11 +25,19 @@ const CartSlice = createSlice({
       });
       let el = items[0];
      el.quantity -= 1;
-      console.log(`quantity from slice ${action.payload.quantity}`);
+     if(el.quantity == 0){
+      state = state.filter((iteam)=>{
+        return iteam.id != id;
+      })
+     }
+      
     },
 
     removeEl: (state) => {
       console.log("remiving");
+      state = state.filter((iteam,action)=>{
+        return iteam.id != action.payload;
+      })
     },
   },
 });

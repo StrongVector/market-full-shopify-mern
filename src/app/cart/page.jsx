@@ -10,7 +10,7 @@ const CartPage = () => {
  
   return !mounted? null: (
     
-    <div className='pt-4 min-h-[90dvh]'>
+    <div className=' min-h-[90dvh]'>
       <Cart/>
     </div>
     

@@ -6,6 +6,7 @@ import CardsList from "../../Components/Utils/CardsList";
 import foodImg from "../../public/imgs/heroLogo.jpg";
 import FoodList from "../../Data";
 import productsList from "../../Data";
+import ScrollList from "../../Components/Utils/ScrollList";
 
 const Home = () => {
   const [mounted, setMounted] = useState(false);
@@ -25,6 +26,7 @@ const Home = () => {
 
       <SubTitle title={"Best Products"} />
       <CardsList data={productsList.slice(0, 5)} />
+      {/* <ScrollList/> */}
       </section>
 
       <section>

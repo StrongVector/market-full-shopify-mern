@@ -4,7 +4,8 @@ import StripeCheckout from 'react-stripe-checkout';
  import logo from '../../public/imgs/heroImg.png'
 const Checkout = () => {
   const [discount,setDescount] = useState(0);
-    const iteams = useSelector(state=>state.cart);
+  const iteams = useSelector(state=>state.cart);
+  const [disable,setDisable] = useState(iteams.length == 0);
 
     const Prices = iteams.map((iteam)=>{return (iteam.price*iteam.quantity)});
     let finalPrice = 0;
@@ -36,18 +37,20 @@ const Checkout = () => {
             name='Hassan pass'
             billingAddress
             shippingAddress
-            description='you total is  $50'
-            amount={5000}
-            image='https://www.google.com/imgres?imgurl=https%3A%2F%2Fart.ngfiles.com%2Fimages%2F1432000%2F1432322_kldpxl_electronics-market.gif%3Ff1600606981&tbnid=fEzlx6MYOUsC2M&vet=12ahUKEwiCtv_66o2BAxWLhaQKHfbrBCsQMygWegUIARCEAQ..i&imgrefurl=https%3A%2F%2Fwww.newgrounds.com%2Fart%2Fview%2Fkldpxl%2Felectronics-market&docid=ps18_3E9znpkdM&w=1200&h=900&q=pixel%20market&client=firefox-b-d&ved=2ahUKEwiCtv_66o2BAxWLhaQKHfbrBCsQMygWegUIARCEAQ'
+            description={`you total is  $${finalPrice}`}
+            amount={finalPrice * 100}
+            image='../../public/imgs/heroImg.png'
             token={onToken}
             stripeKey='
             pk_test_51Nm9S1B5ABLYssjaX2iACdXg8DV3fYtPmLxXFT502LH9d0shFFIjoUBsP6rSunhLydDzahBEdR3HTZSDuFkNB9Fb008RQ78WPA
             '
             >
-            <p className='px-3 py-1 mt-2 rounded-lg shadow-lg bg-blue-600 text-white 
+           
+            <button disabled ={disable}  className='px-3 py-1 mt-2 rounded-lg shadow-lg bg-blue-600 text-white 
             hover:cursor-pointer hover:opacity-90'>
               Chekout
-            </p>
+            </button>
+
             </StripeCheckout>
         </div>
         
